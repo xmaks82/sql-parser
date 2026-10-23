@@ -74,6 +74,8 @@ class CreateStatementTest extends TestCase
             ['parser/parseCreateTableWithInvisibleKey'],
             ['parser/parseCreateTableWithParser'],
             ['parser/parseCreateTableUuidColumn_mariadb_100700'],
+            ['parser/parseCreateTableSystemVersioning_mariadb_100300'],
+            ['parser/parseCreateTableSystemVersioning2_mariadb_100300'],
             ['parser/parseCreateTrigger'],
             ['parser/parseCreateUser1'],
             ['parser/parseCreateUser2'],
