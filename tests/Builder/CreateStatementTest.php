@@ -913,4 +913,18 @@ SQL;
         $this->assertEmpty($parser->errors);
         $this->assertEquals($sql, $parser->statements[0]->build());
     }
+
+    public function testBuildCreateTableSequence(): void
+    {
+        Context::load('MariaDb100300');
+
+        $sql = "CREATE TABLE `s` (\n"
+            . "  `next_not_cached_value` bigint(21) NOT NULL,\n"
+            . "  `minimum_value` bigint(21) NOT NULL\n"
+            . ') ENGINE=InnoDB SEQUENCE=1';
+
+        $parser = new Parser($sql);
+        $this->assertEmpty($parser->errors);
+        $this->assertEquals($sql, $parser->statements[0]->build());
+    }
 }

@@ -2147,12 +2147,12 @@ parameters:
 
 		-
 			message: "#^Dynamic call to static method PHPUnit\\\\Framework\\\\Assert\\:\\:assertEmpty\\(\\)\\.$#"
-			count: 3
+			count: 4
 			path: tests/Builder/CreateStatementTest.php
 
 		-
 			message: "#^Dynamic call to static method PHPUnit\\\\Framework\\\\Assert\\:\\:assertEquals\\(\\)\\.$#"
-			count: 36
+			count: 37
 			path: tests/Builder/CreateStatementTest.php
 
 		-

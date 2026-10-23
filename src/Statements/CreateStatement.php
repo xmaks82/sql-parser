@@ -221,6 +221,10 @@ class CreateStatement extends Statement
         ],
         // MariaDB system-versioned tables.
         'WITH SYSTEM VERSIONING' => 24,
+        'SEQUENCE' => [
+            25,
+            'var=',
+        ],
     ];
 
     /**
